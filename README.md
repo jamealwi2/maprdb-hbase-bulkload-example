@@ -1,9 +1,11 @@
 # maprdb-hbase-bulkload-example
 
 Aim:
+
 To get familiarized with full/fresh bulk load and incremental bulk load concept in MapRDB tables. MapRDB is a high-performance NoSQL database. It has two main flavors – MapRDB Binary and MapRDB JSON. MapRDB Binary has the same capability as of Apache HBase, in fact, it comes with a lot of better performance and stability compared to Apache HBase.
 
 Advantages of MapRDB bulk load over Apache HBase bulk load:
+
 An HBase bulk load has these three steps:
 [1] Generate HFiles using a mapreduce job. 
 [2] Add the HFiles to the region servers. 
