@@ -7,9 +7,10 @@ To get familiarized with full/fresh bulk load and incremental bulk load concept 
 Advantages of MapRDB bulk load over Apache HBase bulk load:
 
 An HBase bulk load has these three steps:
-[1] Generate HFiles using a mapreduce job. 
+[1] Generate HFiles using a mapreduce job.
 [2] Add the HFiles to the region servers. 
 [3] Perform a full compaction to get good locality, since the previous step will not guarantee data locality.
+
 
 A MapR-DB bulk load involves only one step: 
 [1] Execute the mapreduce job. 
